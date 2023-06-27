@@ -1,0 +1,40 @@
+.lastNewsItem p{
+    color: #000 ;
+    text-align: left;
+    padding: 10px 0;
+}
+.lastNewsList  p{
+    color:#000 
+}
+.last-news-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.last-news-title h2{
+font-weight: 700;
+font-size: 28px;
+line-height: 39.2px;
+}
+.lastNewsList{
+width: 80%;
+margin: 100px auto;
+
+}
+.last-news-list{
+    display: flex;
+    gap:10px
+}
+.last-news-list img{
+    max-width: 100%;
+}
+.lastNewsItem span{
+    color:#000;
+    font-weight: 500;
+}
+.lastNewsItem .arrow{
+    padding-left: 20px;
+    font-weight:900
+}

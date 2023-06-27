@@ -1,0 +1,68 @@
+.subscription-gym{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.subscription-gym svg{
+  position: absolute;
+  z-index: 1000;
+  bottom:0px;
+
+}
+.exclusive-programs{
+  position: relative;
+}
+
+.subscription-gym .description{
+  display: flex;
+  width: 650px;
+  font-size: 25px;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 3rem;
+  position: absolute;
+  top:40%;
+  left: 20%;
+  color:#fff
+}
+.description h2{
+  font-size: 50px;
+}
+.description p{
+  text-align: left;
+}
+
+.description button{
+  padding: 5px 10px;
+  background-color: rgb(232, 243, 39);
+  border: none;
+  width: 70px;
+}
+
+
+.subscription-gym img{
+  width: 100%;
+  height: 827px;
+}
+
+.subscription-gym .slick-prev:before {
+  color: #eae1e1;
+
+ }
+ .subscription-gym .slick-next:before {
+  color: #eae1e1;
+
+ }
+ .subscription-gym .slick-prev {
+left: 30px;
+top:300px;
+z-index: 1;
+  
+ }
+
+ .subscription-gym .slick-next {
+  color: #cdbdbd;
+  top:300px;
+  right: 30px;
+ }
+ 

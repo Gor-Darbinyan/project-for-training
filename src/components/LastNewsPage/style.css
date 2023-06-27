@@ -1,0 +1,27 @@
+
+.last-news-page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap:10px
+}
+.last-news-page > div{
+    width: 32%;
+}
+.last-news-page img{
+    width: 100%;
+}
+.last-news-page p{
+    color: #000;
+    text-align: left;
+}
+.last-news-page span{
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+}
+.last-news-page a{
+  text-decoration: none;
+}

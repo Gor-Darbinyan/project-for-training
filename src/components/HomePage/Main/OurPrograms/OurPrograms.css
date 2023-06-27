@@ -1,0 +1,101 @@
+ .container{
+    width: 80%;
+    margin: 100px auto;
+}  
+.container span{
+    color: #000;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+
+}
+.card-title h4{
+font-size: 16px;
+font-weight: 700;
+}
+.card-info{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+
+}
+.card-info p{
+    color:#000;
+    text-align: start;
+}
+.users p{
+    color: #000;
+}
+
+.card-info :last-child p{
+   text-align: end;
+}
+
+.quantity i {
+    padding-left: 10px;
+}
+.card-item{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.card-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.615);
+}
+
+.card-triner{
+    display: flex;
+    justify-content:space-between;
+    border-top: 1px solid rgba(61, 60, 60, 0.252);
+    padding-top: 5px;
+}
+.triner-name{
+    display: flex;
+    align-items:center;
+    gap:5px
+}
+.users{
+    display: flex;
+    align-items:center;
+    gap:5px
+}
+.slick-track{
+    display: flex;
+}
+
+.slick-slide {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .hide-left {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .show-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .slick-slide .img1 {
+    display: block;
+    width: 100%;
+  }
+
+
+ .slick-next:before {
+    content: '>';
+    color:#000;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slick-prev:before {
+    color:#000;
+    font-size: 30px;
+    font-weight: bold;
+    content: '<';
+}
+

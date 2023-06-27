@@ -1,0 +1,43 @@
+.subscription{
+    display: flex;
+
+}
+.subscription img{
+    width: 100%;
+}
+.subscription-item-title{
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    font-weight: 700;
+    text-align: center;
+} 
+.subscription-item-description{
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    font-weight: 700;
+    text-align: center;
+} 
+.subscription-item{
+    position: relative;
+}
+
+.subscription-item div{
+    position: absolute;
+    top:120px;
+    left:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center
+}
+.subscription-item div button{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color:rgb(233, 237, 10);
+    border:none;
+    cursor: pointer;
+}
+
+
+
+

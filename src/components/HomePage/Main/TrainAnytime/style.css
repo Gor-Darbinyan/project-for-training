@@ -1,0 +1,30 @@
+.train-anytime{
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.train-anytime-item hr{
+    border:1px solid yellow;
+    width: 30px;
+}
+
+.train-anytime-item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-self: baseline;
+    width: 14.5%;
+    
+}
+.train-anytime-item p{
+text-align: center;
+color: #000;
+    
+}
+.train-anytime-items{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}

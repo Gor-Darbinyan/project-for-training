@@ -1,0 +1,102 @@
+
+.result{
+    display: flex;
+    margin: 150px auto;
+    width: 75%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.result-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.result-title{
+    margin-bottom: 150px;
+}
+.result-title p{
+    color: #000;
+    text-align: left;
+}
+.restangle1{
+    width: 410px;
+    height: 540px;
+}
+.result-img{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-self:baseline;
+    width: 50%;
+}
+
+.img-absolute{
+    position: absolute;
+    right: 100px;
+    top: 350px;
+    width: 569px;
+    height: 372px;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.result-info{
+    width: 40%;
+}
+.result-img-firstChild{
+    display: flex;
+    justify-content: flex-end;
+}
+.result-description p{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000;
+    text-align: left;
+}
+.result-description p span{
+    font-size: 14px;
+    font-weight: 500;
+    color:#6d6969
+}
+.result-title h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+
+}
+
+.rh5v-DefaultPlayer_component {
+    height: 372px;
+}
+
+.rh5v-Seek_track, .rh5v-Time_component, .rh5v-Volume_component  {
+    display: none;
+}
+
+.rh5v-Fullscreen_component {
+    display: none;
+}
+.rh5v-Overlay_component {
+    display: none;
+}
+
+
+.rh5v-PlayPause_button{
+    fill:black;
+    position: absolute;
+    top:45%;
+    left:45%;
+    background-color:#0000000e;
+    border:none
+}
+
+.rh5v-PlayPause_button svg{
+    fill:rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+}

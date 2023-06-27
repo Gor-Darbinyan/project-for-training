@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+.logo{
+    width: 30%;
+    padding: 5px ;
+    height: 50px;
+}
+.logo img{
+    width: 110px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    height: 100%;
+    margin: 0 30px 0 0;
+    color:black
+}
+.nav-bar{
+    display: flex;
+    width: 60%;
+    align-items:center;
+    justify-content:space-between;
+}
+.personal-aera{
+    background-color:#F0F712;
+    width: 10%;
+    display: flex;
+    align-items:center;
+    height: 50px;
+    justify-content: center;
+
+}
+.personal-aera a{
+    text-decoration: none;
+}
+select{
+    border: none;
+    background-color: #ffffff;
+}
+select:focus{
+    outline:none
+}
