@@ -1,54 +1,43 @@
 import React from "react";
-import './style.css';
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import LastNewsItem from "./LastNewsItem";
-import Picture1 from "./images/Picture1.png";
-import Picture2 from "./images/Picture2.png";
-import Picture3 from "./images/Picture3.png";
-const LastNewsList = () => {
-  const data = [
-    {
-      url: Picture1,
-      description:
-        "Качать пресс нужно не только ради кубиков. Мышцы корпуса стабилизируют позвоночник, участвуют практически в любом движении, улучшают чувство баланса и защищают спину от травм и боли.",
-      title:
-        "Прокачка: сумасшедший комплекс для железного пресса и сильных ног",
-    },
-    {
-      url: Picture2,
-      description:
-        "Качать пресс нужно не только ради кубиков. Мышцы корпуса стабилизируют позвоночник, участвуют практически в любом движении, улучшают чувство баланса и защищают спину от травм и боли.",
-      title:
-        "Прокачка: 5 упражнений для железного пресса. И никаких скручиваний",
-    },
-    {
-      url: Picture3,
-      description:
-        "Качать пресс нужно не только ради кубиков. Мышцы корпуса стабилизируют позвоночник, участвуют практически в любом движении, улучшают чувство баланса и защищают спину от травм и боли.",
-      title: "3 распространённые ошибки при постановке фитнес-целей",
-    },
-  ];
+import { useDispatch } from "react-redux";
+import "./style.css";
+const LastNewsItem = () => {
+  const lastNews = useSelector((state) => state.lastNews.lastNews);
+
+
+
+  const selectedNews = lastNews.filter((item) => item.id < 4);
   return (
     <div className="lastNewsList">
       <div className="last-news-title">
         <p>ЧИТАЙТЕ НАС Последние новости и статьи </p>
-       <Link to="/lastNews"><h2 >Последние новости и статьи </h2></Link>
+        <Link to="/lastNews">
+          <h2>Последние новости и статьи </h2>
+        </Link>
       </div>
-      <div className="last-news-list">
-             {data.map((item,id) => {
-        return (
-          <LastNewsItem
-          key={id}
-            url={item.url}
-            description={item.description}
-            title={item.title}
-          />
-        );
-      })}
+      <div className="last-news-item">
+        {selectedNews.map((item) => {
+          return (
+            <div>
+              <img src={item.url} alt="img" />
+              <h4>{item.title}</h4>
+              <p>{item.description.slice(0, 182)}</p>
+
+              <Link
+                to={`/lastNews/${item.id}`}
+               
+              >
+                <span>Читать подробнее</span>
+                <span className="arrow">&#10230;</span>
+              </Link>
+            </div>
+          );
+        })}
       </div>
- 
     </div>
   );
 };
 
-export default LastNewsList;
+export default LastNewsItem;

@@ -11,6 +11,7 @@ import LastNewsList from "./LastNews/LastNewsList";
 import WhatSeparatesUs from "./WhatSeparatesUs/WhatSeparatesUs";
 import LastNewsPage from "../../LastNewsPage/LastNewsPage";
 import { Outlet } from "react-router-dom";
+import LastNewsItem from "./LastNews/LastNewsList";
 const Main = () => {
   return (
     <div>

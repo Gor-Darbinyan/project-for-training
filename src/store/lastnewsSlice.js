@@ -90,14 +90,14 @@ const lastNewsSlice = createSlice({
             },
         ],
     },
-    reducers: {
-        filterLastNews(state,action){
-            state.lastNews = state.lastNews.filter(lastNew => lastNew.id === action.payload.id)
-        }
-    },
+    // reducers: {
+    //     filterLastNews(state,action){
+    //         state.lastNews = state.lastNews.filter(lastNew => lastNew.id === action.payload.id)
+    //     }
+    // },
 
 })
 
 
-export const {filterLastNews} = lastNewsSlice.actions;
+// g
 export default lastNewsSlice.reducer;
