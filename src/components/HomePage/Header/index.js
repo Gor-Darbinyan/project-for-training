@@ -1,13 +1,14 @@
 import React from "react";
 import logo from './images/logo.png';
 import './style.css';
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
     return(
         <header>
             <div className="logo">
-                <img src={logo} alt="logo"/>
+               <Link to={'/'}> <img src={logo} alt="logo"/></Link>
             </div>
            <div  className="nav-bar">
                      <a href="#">Программы тренировок</a>

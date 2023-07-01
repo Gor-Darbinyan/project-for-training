@@ -12,7 +12,7 @@
 .last-news-page img{
     width: 100%;
 }
-.last-news-page p{
+.last-news-page div p{
     color: #000;
     text-align: left;
 }
@@ -24,4 +24,7 @@
 }
 .last-news-page a{
   text-decoration: none;
+}
+.single-page p{
+    color:#000
 }

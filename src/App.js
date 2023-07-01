@@ -6,7 +6,8 @@ import Footer from "./components/HomePage/Footer";
 import Main from "./components/HomePage/Main";
 // import Layout from "./components/Layout";
 import LastNewsPage from "./components/LastNewsPage/LastNewsPage";
-import LastNewsSinglePage from "./components/LastNewsSinglePage/LastNewsSinglePage";
+import LastNewsSinglePage from "./components/LastNewsPage/LastNewsSinglePage";
+
 
 function App() {
   return (
