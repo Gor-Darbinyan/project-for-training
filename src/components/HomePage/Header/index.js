@@ -25,7 +25,7 @@ const Header = () => {
                      <a href="#"><i className="fa fa-telegram"></i></a>                
             </div>
             <div className="personal-aera">
-                 <a href="#" >ЛИЧНЫЙ КАБИНЕТ</a>   
+                 <Link to='/login'>ЛИЧНЫЙ КАБИНЕТ</Link> 
             </div>
         </header>
     )

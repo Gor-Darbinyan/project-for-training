@@ -7,6 +7,8 @@ import Main from "./components/HomePage/Main";
 // import Layout from "./components/Layout";
 import LastNewsPage from "./components/LastNewsPage/LastNewsPage";
 import LastNewsSinglePage from "./components/LastNewsPage/LastNewsSinglePage";
+import LoginPage from "./components/LoginePage/LoginPage";
+import RegisterPage from "./components/RegisterPage/RegisterPage";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" element={<Main />} />
           <Route path="lastNews" element={<LastNewsPage />} />
           <Route path="lastNews/:id" element={<LastNewsSinglePage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="register" element={<RegisterPage />} />
         <Route />
       </Routes>
       <Footer />
